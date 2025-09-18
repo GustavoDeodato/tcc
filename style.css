@@ -1,0 +1,100 @@
+/* Reset básico */
+body, html {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom right, #00FFB2, #06E6C4, #07DECA, #09D6D0, #0CC9D9, #0FBCE2, #12ADEC, #15A0F5, #1892FF);
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Container principal */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1400px;
+  height: 100vh;
+  padding: 0 50px;
+  box-sizing: border-box;
+}
+
+/* Lado esquerdo */
+.left {
+  display: flex;
+  align-items: flex-end;
+}
+
+.imagem-container {
+  position: relative;
+  width: 600px;
+}
+
+.imagem {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+
+.base {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background-color: white;
+  border-radius: 0 0 20px 20px;
+  z-index: 0;
+}
+
+/* Lado direito */
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+}
+
+.tea {
+  color: #1e3a8a;
+}
+
+.botoes {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Botões */
+.btn {
+  padding: 12px 24px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #1d4ed8;
+}
